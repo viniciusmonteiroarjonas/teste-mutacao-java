@@ -13,7 +13,6 @@ public class LocacaoServiceTest {
 
     @Test
     public void test() {
-
         // Cenário
         LocacaoService service = new LocacaoService();
         Usuario usuario = new Usuario("Vinicius Monteiro Arjonas");
@@ -24,8 +23,12 @@ public class LocacaoServiceTest {
 
         // Validação teste With Assert
         Assert.assertTrue(locacao.getValor() == 5.0);
+        Assert.assertNotNull(locacao.getUsuario());
+        Assert.assertNotNull(locacao.getFilme());
         Assert.assertTrue(DataUtils.isMesmaData(locacao.getDataLocacao(), new Date()));
         Assert.assertTrue(DataUtils.isMesmaData(locacao.getDataRetorno(), DataUtils.obterDataComDiferencaDias(1)));
+        Assert.assertNotNull(DataUtils.verificarDiaSemana(new Date(), 5));
 
     }
+
 }
