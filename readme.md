@@ -30,7 +30,9 @@ Acesse o diretório "target/pit-reports/202204161936" e abra o arquivo index.htm
 ![img.png](src/main/resources/img/mutacao.png)
 
 
+## Spot Bugs
 
+Acesse o diretório "target/site/" e abra o arquivo spotbugs.html no seu navegador, o resultado será o abaixo:
 
-
+![img.png](src/main/resources/img/spotbugs.png)
 
